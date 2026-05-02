@@ -60,6 +60,24 @@ h2 {
   margin-bottom: 20px;
 }
 
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.condition-box {
+  background: #d8cdc3;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.condition-box h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
 /* CARDS */
 .card {
   background: white;
@@ -118,18 +136,69 @@ footer {
 
 
 <nav>
-  <a href="#home">Home</a>
+  <a href="#conditions">Conditions</a>
+  <a href="#approach">How I Treat</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#conditions">Conditions</a>
   <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-  <h2>Welcome</h2>
-  <p>Supporting your health through balance, restoration, and personalized care through Traditional Chinese Medicine.</p>
+<section id="conditions">
+  <h2 style="text-align:center;">Conditions Treated</h2>
+
+  <div class="conditions-grid">
+
+```
+<div class="condition-box">
+  <h3>Pain</h3>
+  <p>Chronic and acute pain<br>
+  Migraines, concussion<br>
+  Back pain, joint/orthopedic pain</p>
+</div>
+
+<div class="condition-box">
+  <h3>Digestive Disorders</h3>
+  <p>Reflux<br>
+  IBS</p>
+</div>
+
+<div class="condition-box">
+  <h3>Wellness</h3>
+  <p>Hormones<br>
+  Weight management<br>
+  Energy levels<br>
+  Chronic disease management</p>
+</div>
+
+<div class="condition-box">
+  <h3>Mental Health</h3>
+  <p>Stress<br>
+  Anxiety<br>
+  Insomnia</p>
+</div>
+```
+
+  </div>
 </section>
+
+<section id="approach">
+  <h2>How I Treat</h2>
+
+  <p>
+  I use a structured, analytical approach rooted in Traditional Chinese Medicine to identify patterns and restore balance in the body.
+  </p>
+
+  <p>
+  Treatments may include acupuncture, herbal formulas, and lifestyle guidance tailored specifically to your condition and constitution.
+  </p>
+
+  <p>
+  My goal is not only to relieve symptoms, but to address the underlying imbalance and support long-term health.
+  </p>
+</section>
+
+
 
 <section id="about">
   <h2>About</h2>
