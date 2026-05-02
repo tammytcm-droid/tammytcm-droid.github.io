@@ -2,90 +2,85 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Tammy Lee Acupuncture and TCM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>JingWell Clinic</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-    header {
-      background: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528') center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+/* HERO */
+header {
+  background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+header h1 {
+  font-size: 48px;
+}
+header p {
+  font-size: 20px;
+}
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+/* NAV */
+nav {
+  background: #2e7d6b;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    header p {
-      font-size: 18px;
-    }
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  color: #2e7d6b;
+}
 
-    nav {
-      background: #2e7d6b;
-      padding: 12px;
-      text-align: center;
-    }
+/* CARDS */
+.card {
+  background: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* BLOG */
+.blog-post {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
 
-    section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+/* BUTTON */
+button {
+  background: #2e7d6b;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-    h2 {
-      color: #2e7d6b;
-    }
-
-    .services {
-      display: grid;
-      gap: 20px;
-    }
-
-    .card {
-      background: #f7f7f7;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    button {
-      background: #2e7d6b;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+/* FOOTER */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 20px;
+}
+</style>
 
 </head>
 
@@ -97,50 +92,66 @@
 </header>
 
 <nav>
+  <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
+  <a href="#blog">Blog</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Supporting your health through balance, restoration, and personalized care.</p>
+</section>
 
 <section id="about">
   <h2>About</h2>
   <p>
-    At JingWell Clinic, we focus on restoring balance and supporting your body’s natural healing process through Traditional Chinese Medicine.
+    At JingWell Clinic, we focus on restoring harmony within the body using Traditional Chinese Medicine.
   </p>
 </section>
 
 <section id="services">
   <h2>Services</h2>
 
-  <div class="services">
-    <div class="card">
-      <h3>Acupuncture</h3>
-      <p>Targeted treatments to relieve pain, reduce stress, and improve overall wellness.</p>
-    </div>
-
-```
-<div class="card">
-  <h3>Herbal Medicine</h3>
-  <p>Customized herbal formulas tailored to your individual condition.</p>
-</div>
-
-<div class="card">
-  <h3>Cupping Therapy</h3>
-  <p>Helps improve circulation and release muscle tension.</p>
-</div>
-```
-
+  <div class="card">
+    <h3>Acupuncture</h3>
+    <p>Pain relief, stress reduction, and improved energy flow.</p>
   </div>
 
-  <div class="cta">
-    <button onclick="alert('Online booking coming soon')">Book Appointment</button>
+  <div class="card">
+    <h3>Herbal Medicine</h3>
+    <p>Customized formulas tailored to your condition.</p>
   </div>
+
+  <div class="card">
+    <h3>Cupping Therapy</h3>
+    <p>Improves circulation and releases muscle tension.</p>
+  </div>
+</section>
+
+<section id="blog">
+  <h2>Blog</h2>
+
+  <div class="blog-post">
+    <h3>What is Acupuncture?</h3>
+    <p>A brief introduction to how acupuncture works and its benefits.</p>
+  </div>
+
+  <div class="blog-post">
+    <h3>Benefits of Herbal Medicine</h3>
+    <p>How herbs support long-term healing and balance.</p>
+  </div>
+
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
   <p>Email: your@email.com</p>
   <p>Location: Calgary, AB</p>
+
+<button onclick="alert('Booking coming soon')">Book Appointment</button>
+
 </section>
 
 <footer>
