@@ -8,52 +8,82 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f7f7f7;
+      font-family: Arial, sans-serif;
       color: #333;
+      line-height: 1.6;
     }
+
     header {
-      background: #2e7d6b;
+      background: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528') center/cover;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 100px 20px;
     }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
     nav {
-      background: #1f5c50;
-      padding: 10px;
+      background: #2e7d6b;
+      padding: 12px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 60px 20px;
+      max-width: 900px;
       margin: auto;
     }
+
+    h2 {
+      color: #2e7d6b;
+    }
+
+    .services {
+      display: grid;
+      gap: 20px;
+    }
+
     .card {
-      background: white;
+      background: #f7f7f7;
       padding: 20px;
-      margin-bottom: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    footer {
+
+    .cta {
       text-align: center;
-      padding: 20px;
-      background: #ddd;
+      margin-top: 30px;
     }
+
     button {
       background: #2e7d6b;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 25px;
+      font-size: 16px;
       border-radius: 5px;
       cursor: pointer;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 
@@ -63,7 +93,7 @@
 
 <header>
   <h1>JingWell Clinic</h1>
-  <p>Holistic Wellness • Traditional Chinese Medicine</p>
+  <p>Traditional Chinese Medicine & Holistic Wellness</p>
 </header>
 
 <nav>
@@ -73,30 +103,44 @@
 </nav>
 
 <section id="about">
-  <div class="card">
-    <h2>About</h2>
-    <p>Welcome! I provide personalized holistic care using Traditional Chinese Medicine.</p>
-  </div>
+  <h2>About</h2>
+  <p>
+    At JingWell Clinic, we focus on restoring balance and supporting your body’s natural healing process through Traditional Chinese Medicine.
+  </p>
 </section>
 
 <section id="services">
-  <div class="card">
-    <h2>Services</h2>
-    <ul>
-      <li>Acupuncture</li>
-      <li>Herbal Medicine</li>
-      <li>Cupping Therapy</li>
-    </ul>
+  <h2>Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>Acupuncture</h3>
+      <p>Targeted treatments to relieve pain, reduce stress, and improve overall wellness.</p>
+    </div>
+
+```
+<div class="card">
+  <h3>Herbal Medicine</h3>
+  <p>Customized herbal formulas tailored to your individual condition.</p>
+</div>
+
+<div class="card">
+  <h3>Cupping Therapy</h3>
+  <p>Helps improve circulation and release muscle tension.</p>
+</div>
+```
+
+  </div>
+
+  <div class="cta">
+    <button onclick="alert('Online booking coming soon')">Book Appointment</button>
   </div>
 </section>
 
 <section id="contact">
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>Location: Calgary, AB</p>
-    <button onclick="alert('Booking coming soon!')">Book Appointment</button>
-  </div>
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>Location: Calgary, AB</p>
 </section>
 
 <footer>
