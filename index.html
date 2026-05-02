@@ -63,16 +63,16 @@ h2 {
 /*CONDITIONS*/
 .conditions-grid {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .condition-box {
   background: #d8cdc3;
   padding: 20px 15px;
   text-align: center;
-  flex: 1;
-  min-width: 0;
+  flex: 1 1 calc(25% - 12px); /* 4 per row */
 }
 
 .condition-box h3 {
@@ -83,6 +83,20 @@ h2 {
 .condition-box p {
   font-size: 14px;
   line-height: 1.4;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .condition-box {
+    flex: 1 1 calc(50% - 12px); /* 2 per row */
+  }
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .condition-box {
+    flex: 1 1 100%; /* 1 per row */
+  }
 }
 
 /* CARDS */
