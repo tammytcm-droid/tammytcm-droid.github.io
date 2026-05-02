@@ -63,25 +63,26 @@ h2 {
 /*CONDITIONS*/
 .conditions-grid {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 🔴 THIS forces one row */
 }
 
 .condition-box {
   background: #d8cdc3;
-  padding: 20px 15px;
+  padding: 18px 12px;
   text-align: center;
-  flex: 1 1 calc(25% - 12px); /* 4 per row */
+  flex: 1;
+  min-width: 0; /* 🔴 prevents overflow pushing items down */
 }
 
 .condition-box h3 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .condition-box p {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
 }
 
