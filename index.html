@@ -136,6 +136,9 @@ footer {
   text-align: center;
   padding: 20px;
 }
+html {
+  scroll-behavior: smooth;
+}
 </style>
 
 </head>
@@ -171,6 +174,9 @@ footer {
   <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
   <a href="#contact">Contact</a>
 </nav>
+nav a.active {
+  border-bottom: 2px solid white;
+}
 
 <section id="conditions">
   <h2>Conditions Treated</h2>
@@ -380,5 +386,31 @@ Calgary, AB T2X 3J3</p>
   </p>
 </footer>
 
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
+
+  
 </body>
 </html>
