@@ -3,28 +3,31 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JingWell Clinic</title>
+<title>Tammy Lee Acupuncture & TCM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
   color: #333;
+  line-height: 1.6;
 }
 
 /* HERO */
 header {
-  background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover;
   color: white;
   text-align: center;
   padding: 120px 20px;
 }
 header h1 {
-  font-size: 48px;
+  font-size: 42px;
+  margin-bottom: 10px;
 }
 header p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* NAV */
@@ -37,7 +40,10 @@ nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* SECTIONS */
@@ -48,6 +54,7 @@ section {
 }
 h2 {
   color: #2e7d6b;
+  margin-bottom: 20px;
 }
 
 /* CARDS */
@@ -58,20 +65,18 @@ h2 {
   border-radius: 10px;
 }
 
-/* BLOG */
-.blog-post {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-}
-
-/* BUTTON */
-button {
+/* BUTTONS */
+.button {
+  display: inline-block;
   background: #2e7d6b;
   color: white;
-  border: none;
-  padding: 12px 25px;
+  padding: 12px 20px;
+  margin-top: 10px;
   border-radius: 5px;
-  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover {
+  background: #25675a;
 }
 
 /* FOOTER */
@@ -87,8 +92,8 @@ footer {
 <body>
 
 <header>
-  <h1>Tammy Lee Acupuncture and TCM</h1>
-  <p>Practitioner - Educator - Volunteer</p>
+  <h1>Tammy Lee Acupuncture & TCM</h1>
+  <p>Practitioner • Educator • Volunteer</p>
   <p>Serving Calgary for over 10 years</p>
 </header>
 
@@ -96,60 +101,31 @@ footer {
   <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#blog">Blog</a>
+  <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="home">
   <h2>Welcome</h2>
-  <p>Supporting your health through balance, restoration, and personalized care.</p>
+  <p>Supporting your health through balance, restoration, and personalized care through Traditional Chinese Medicine.</p>
 </section>
 
 <section id="about">
   <h2>About</h2>
-  <p>
-    
-Acupuncturist - TCM Herbalist - CM Enthusiast<p>
 
-  
-<p>Hi, I'm Tammy - <p>
+  <p><strong>Acupuncturist • TCM Herbalist • Chinese Metaphysics Enthusiast</strong></p>
 
-      
-<p>I started off my career in accounting after obtaining my degree in Commerce (Accounting) from UBC in 2000. <p>
-​
-<p>After obtaining my CPA (ME), I had kids and stopped work to raise my family.  During this time, my baby had some terrible eczema and it was TCM that was able to solve the problem.  I discovered a truly wonderful and magical rabbit hole that, instead of going back to work, lead me to pursue studying Traditional Chinese Medicine (TCM).<p>
+  <p>Hi, I'm Tammy.</p>
 
-​<p>I attended the Alberta College of Acupuncture and TCM and since graduating, I have had the pleasure of serving Calgarians for over 10 years as a practitioner, educator and volunteer acupuncturist.<p>
+  <p>I began my career in accounting after earning my Commerce degree from UBC. After obtaining my CPA, I stepped away from work to raise my family.</p>
 
-<p>My analytical and formula-based approach enables me to effectively treat a wide range of conditions.  My special interests are pain (chronic and acute), migraines and digestive disorders.<p>
-​
-<p>Outside of clinic, I enjoy spending time with my kids and friends, cooking, knitting, delving into foundational TCM theories, and Chinese Metaphysics (CM).<p>
+  <p>During that time, my baby developed severe eczema. Traditional Chinese Medicine was what resolved it — and that experience changed my path completely.</p>
 
-​
+  <p>I went on to study at the Alberta College of Acupuncture and TCM, and for over 10 years I’ve been serving Calgarians as a practitioner, educator, and volunteer acupuncturist.</p>
 
-<p>-------------------<p>
+  <p>I take a structured, analytical approach to treatment and focus on pain, migraines, and digestive health.</p>
 
-<p>Creative Works:<p>
-​
-
-<p>Editor
-Kee, Alfred. (2021). Grasping the Changes of the I Ching: The Eight Secrets of the Wen Wang Gua.  AK Guru Prediction Consultancy.<p>
-​
-
-<p>Webapp Developer/Creator
-(April 2026) https://tammytcm-droid.github.io/iching/<p>
-
-​
-
-<p>-------------------<p>
-
-<p>Volunteer Activities:<p>
-​
-
-<p>Volunteer Acupuncturist
-Pregnancy and Infant Loss Support Centre
-https://pilsc.org/
-  </p>
+  <p>Outside the clinic, I enjoy time with my family, cooking, knitting, and studying foundational TCM and Chinese Metaphysics.</p>
 </section>
 
 <section id="services">
@@ -157,84 +133,43 @@ https://pilsc.org/
 
   <div class="card">
     <h3>Acupuncture</h3>
-    <p>$90 - Initial appointment - 75 minutes <p>
-    <p>$60 - Follow-up appointment - 45 minutes <p>
-
-​
-
- <p>I practice TCM, Balance Method, Master Tung style, auricular, and release motor points.<p>
-
- 
-
-<p>To maximize your needle retention time, it's best to wear loose-fitting clothes that can be rolled up to your elbows and knees. A loose tank top or shorts may be helpful.<p>
-
- 
-
-<p>Sometimes it's not good to have acupuncture done.  If you are too weak or too hungry, acupuncture will be advised against.  It's best to have something to eat an hour or so before acupuncture.  If you are on blood-thinners, acupuncture may not be for you.  While I do see many women's health issues, my treatments tend to be a bit too moving so I do not treat IVF-fertility or while pregnant - you can see the lovely folks at https://www.wellnesson1st.com (1st St/16 Ave NW) , Cheryl Lee (clwilliams4@gmail.com - Nolan Hill), or Sarah Kim (sarahkimcalgary@gmail.com - downtown core) for this care.</p>
+    <p><strong>$90 initial (75 min) • $60 follow-up (45 min)</strong></p>
+    <p>Includes TCM, Balance Method, Master Tung, auricular, and motor point release.</p>
   </div>
 
   <div class="card">
     <h3>Telehealth</h3>
-    <p>$90 - Initial appointment - 45 minutes <p>
-    <p>$30 - Follow-up appointment - 15 minutes <p>
-
-​
-
- <p>Don't have time to come in to get your pulse read?  You can send in other information at least 24 hours in advance of your telehealth appointment, which includes lots of detail on the intake and progress forms, pictures of your tongue and ears, and ideally blood pressure readings.  Your information will be reviewed and the telehealth appointment will be to confirm the diagnosis. You then can visit herb shops to buy OTC herbs, or if you wish to purchase herbs from me, your herbs will be mailed out to you.  To get the most out of telehealth appointments, it would be best to invest in a blood pressure monitor so you can send that information as well.  (Costco has very decent and reasonably priced digital blood pressure monitors.  I have no affiliation with Costco.)
-
-</p>
-  </div>
-
-    <div class="card">
-    <h3>TCM Herbal Formulas</h3>
-    <p>$30 for 50g - taken over approx 7-10 days <p>
-
-​
-
- <p>I use Classical TCM formulas in granule form - a dissolvable powder which you add to a cup of hot water and stir, much like how instant coffee is prepared.  While less potent than raw herbs, the granules taste much better and are much less work, a very welcome innovation in this ancient tradition.  I use brands that have Health Canada NPNs to meet Health Canada's standards for endangered species and contamination/toxicity.</p>
+    <p><strong>$90 initial • $30 follow-up</strong></p>
+    <p>Submit intake details, tongue/ear photos, and health data in advance for diagnosis and herbal support.</p>
   </div>
 
   <div class="card">
-    <h3>Advanced Pulse Tutorials - coming soon</h3>
-    <p>4 hours - $200 each person <p>
-
-      
- <p>Advance pulse diagnosis sessions covering pulse dynamics and I Ching pulse to apply to acupuncture and herbs. You should already be familiar with TCM patterns before considering this session.  2 - 4 participants.  Boardroom needs to be booked in advance.  Learn how to use the pulse readings and this tool for acu and herbs.  ​1 year free access to https://jingwell.ca/iching/ included.</p>
+    <h3>TCM Herbal Formulas</h3>
+    <p><strong>$30 / 50g</strong></p>
+    <p>Granule formulas using Health Canada approved products.</p>
   </div>
-  </section>
 
-<section id="The Team">
-     <h2>The Team</h2>
-    <p>The Team - Me, myself and I - the practitioner, admin and back office.<p>
-    <p>I like to keep things simple so that I can focus on you.  While I get this practice off the ground I have delayed learning how to take insurance.  Taking insurance may be added at a later date.  Receipts will be provided so that you can submit to your insurance company for reimbursement or use for tax purposes.<p>
-    <p>Most third-party insurance companies cover acupuncture.  Herbs and Telehealth appointments are generally not covered by most third-party insurance.  To avoid disappointment, always double check with your insurance to see if these services are covered under your plan.<p>
-    <p>E-transfer and cash accepted.<p>
-    </div>
-  </section>
+</section>
 
-  
 <section id="contact">
-  <h2>Contact - Private Acupuncture</h2>
-  <p>Email: tammy@jingwell. ca</p>
-  <p>Location: Mount Royal Executive Centre - Hanson Place<p>
-               <p>909 17th Ave SW - Suite 400<p>
-               <p>Calgary, AB  T2T 0A4</p><p>
-  <p>Hours: Tuesdays     10am - 2pm<p>
-         <p>Thursdays    10am - 2pm<p>
-         <p>Saturdays    10am - 8pm<p>
-         <p>Sundays      10am - 8pm<p>
-         <p>Other times available by appointment<p>
-<button onclick="alert('Booking coming soon')">Book Appointment at MREC</button>
+  <h2>Private Acupuncture (MREC)</h2>
 
-                 
-   <h2>Contact - Volunteer Acupuncture</h2>
-  <p>Email: tammyl@pilsc. org</p>
-  <p>Location: PILSC - Pregnancy and Infant Loss Support Centre<p>
-               <p>14505 Banniser Road SE<p>
-               <p>Calgary, AB  T2X 3J3</p>
-   <p>Hours: Mondays     10am - 5pm<p>
-          <p>Wednesdays    Coming soon<p>
-<button onclick="alert('Booking coming soon')">Book Appointment at PILSC</button>
+  <p><strong>Email:</strong> tammy@jingwell.ca</p>
+  <p><strong>Location:</strong> 909 17 Ave SW, Suite 400, Calgary</p>
+  <p><strong>Hours:</strong> Tues, Thurs, Sat, Sun</p>
+
+  <a class="button" href="https://www.colib.io/Booking/tammy-lee-acupuncture-tcm" target="_blank">
+    Book Appointment at MREC
+  </a>
+
+  <h2 style="margin-top:50px;">Volunteer Acupuncture (PILSC)</h2>
+
+  <p><strong>Email:</strong> tammyl@pilsc.org</p>
+  <p><strong>Location:</strong> Pregnancy & Infant Loss Support Centre</p>
+
+  <a class="button" href="https://pilsupportcentre.janeapp.com/locations/alberta-pregnancy-infant-loss-support-centre/book#/staff_member/167/treatment/201" target="_blank">
+    Book Appointment at PILSC
+  </a>
 
 </section>
 
@@ -244,9 +179,6 @@ https://pilsc.org/
     <a href="privacy.html">Privacy Policy</a> |
     <a href="disclaimer.html">Disclaimer</a>
   </p>
-</footer>
-
-
 </footer>
 
 </body>
