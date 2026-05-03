@@ -58,6 +58,44 @@ nav a.active {
   border-bottom: 2px solid white;
 }
 
+/* DROPDOWN */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #2e7d6b;
+  min-width: 180px;
+  top: 100%;
+  left: 0;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.dropdown-content a:hover {
+  background: #25675a;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* SECTIONS */
 section {
   padding: 70px 20px;
@@ -174,7 +212,14 @@ html {
   <a href="#approach">How I Treat</a>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
+  <div class="dropdown">
+  <a href="#">Resources</a>
+  <div class="dropdown-content">
+    <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
+    <a href="https://jingwell.ca/iching/" target="_blank">I Ching App</a>
+  </div>
+</div>
+
   <a href="#contact">Contact</a>
 </nav>
 
