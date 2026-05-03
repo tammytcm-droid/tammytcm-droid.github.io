@@ -64,13 +64,11 @@ nav a.active {
   position: relative;
 }
 
-.dropdown a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 0 15px;
+.dropbtn {
+  cursor: pointer;
 }
 
+/* Hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -85,15 +83,23 @@ nav a.active {
 .dropdown-content a {
   display: block;
   padding: 10px 15px;
+  color: white;
 }
 
 .dropdown-content a:hover {
   background: #25675a;
 }
 
-/* SHOW DROPDOWN ON HOVER */
-.dropdown:hover .dropdown-content {
+/* Show when active (mobile) */
+.dropdown.active .dropdown-content {
   display: block;
+}
+
+/* Desktop hover still works */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
 
 /* SECTIONS */
@@ -183,7 +189,7 @@ html {
 </style>
 
 </head>
-
+  
 <body>
 
 <header>
@@ -215,7 +221,14 @@ html {
   <div class="dropdown">
   <a href="#">Resources</a>
   <div class="dropdown-content">
+    <div class="dropdown">
+  <a href="#" class="dropbtn">Resources</a>
+  <div class="dropdown-content">
     <a href="https://tammyleedrac.wixsite.com/jingwell/blog" target="_blank">Blog</a>
+    <a href="https://jingwell.ca/iching/" target="_blank">I Ching App</a>
+  </div>
+</div>
+
     <a href="https://jingwell.ca/iching/" target="_blank">I Ching App</a>
   </div>
 </div>
@@ -484,6 +497,22 @@ window.addEventListener("scroll", () => {
 });
 </script>
 
-  
+<script>
+const dropdown = document.querySelector(".dropdown");
+const button = document.querySelector(".dropbtn");
+
+button.addEventListener("click", function(e) {
+  e.preventDefault();
+  dropdown.classList.toggle("active");
+});
+
+// Close dropdown if clicking outside
+document.addEventListener("click", function(e) {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("active");
+  }
+});
+</script>
+
 </body>
 </html>
